@@ -25,9 +25,9 @@ export const auth = {
 ### Uso de variables
 
 ```sass
-$background: #111827;
-$secondary-color: #ff686b;
-$white: #fff;
-$font: 'Poppins', sans-serif;
+$background: #111827
+$secondary-color: #ff686b
+$white: #fff
+$font: 'Poppins', sans-serif
 
 ```
