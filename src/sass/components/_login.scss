@@ -1,0 +1,47 @@
+.login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+	width: 100%;
+	text-align: center;
+	.login__label {
+		display: block;
+		color: $white;
+		position: absolute;
+		left: 1.9rem;
+		bottom: 2rem;
+		transition: all ease-in-out 0.5s;
+		&.quitarTransition {
+			bottom: 4rem;
+		}
+	}
+	.login__content {
+		position: relative;
+	}
+	.login__input {
+		border: none;
+		outline: none;
+		padding: 0.7rem;
+		margin-bottom: 1.5rem;
+		border-radius: 0.5rem;
+		border-bottom: 2px solid $secondary-color;
+		background: transparent;
+		color: $white;
+	}
+}
+#usuario:focus ~ #usuario__label {
+	bottom: 4rem;
+}
+#password:focus ~ #password__label {
+	bottom: 4rem;
+}
+.auth__user {
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: $white;
+}
+.user__container {
+	display: flex;
+	justify-content: center;
+}

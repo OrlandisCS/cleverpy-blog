@@ -1,0 +1,54 @@
+.card {
+	background-color: #0e273c;
+	width: 290px;
+	border-radius: 10px;
+	padding: 1.2rem;
+	color: #c1dff0;
+	position: relative;
+	.top__title {
+		p {
+			width: 100%;
+			margin: 0.5rem 0;
+			padding: 0;
+		}
+		font-size: 1.1rem;
+		span {
+			font-weight: bold;
+		}
+	}
+	.top__subtitle {
+		p {
+			margin: 0;
+			padding: 0;
+		}
+		font-size: 0.9rem;
+		color: $white;
+		font-weight: bold;
+	}
+	.card__body {
+		border-radius: 10px;
+		margin: 0.5rem 0;
+		padding: 0;
+	}
+
+	.price__place,
+	.shisa__name__population {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.price__place {
+		.button__price {
+			padding: 0.9rem 3rem;
+			background: #008793;
+			color: #c1dff0;
+		}
+	}
+}
+.container__cards {
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+	gap: 2rem 0;
+	justify-items: center;
+}

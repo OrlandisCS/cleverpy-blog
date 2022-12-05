@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;700&family=Poppins:wght@100;400;700&display=swap');
+@import './configurations/variables';
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+body {
+	background: $background;
+	font-size: 100%;
+	font-family: $font;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+.flex {
+	display: flex;
+}
+.direction__column {
+	flex-direction: column;
+}
+.justify__center {
+	justify-content: center;
+}
+.items__center {
+	align-items: center;
+}
+.space__evenly {
+	justify-content: space-evenly;
+}
+.text__center {
+	text-align: center;
+}
+.container {
+	margin: 0 auto;
+	width: 95%;
+	margin-bottom: 2.5rem;
+}
+.btn {
+	border: none;
+	outline: none;
+	padding: 1rem 4rem;
+	border-radius: 1rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $secondary-color;
+	color: $white;
+	.btn__login {
+		margin: 0 0.5rem;
+	}
+}
+.btn__container__eliminar {
+	position: absolute;
+	bottom: 0.5rem;
+	right: 0.5rem;
+
+	.btn__eliminar {
+		outline: none;
+		border: none;
+		background: transparent;
+		cursor: pointer;
+	}
+	.btn__login {
+		display: flex;
+		align-items: center;
+		p {
+			margin-right: 0.7rem;
+		}
+	}
+}
+.user__name {
+	color: $secondary-color;
+	span {
+		font-weight: bold;
+	}
+}
+.spinner__conteiner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+}
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	li {
+		margin: 0 0.5rem;
+	}
+	.page-link {
+		cursor: pointer;
+		padding: 0.5rem;
+		&.activePage {
+			color: $white;
+			background-color: $secondary-color;
+		}
+	}
+}
+@import './components/sidebar';
+@import './components/logo';
+@import './components/card';
+@import './components/login';

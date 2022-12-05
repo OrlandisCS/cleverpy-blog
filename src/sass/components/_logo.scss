@@ -1,0 +1,12 @@
+.logo {
+	h1 {
+		color: $secondary-color;
+		span {
+			display: block;
+			font-size: 1rem;
+			font-weight: 400;
+			color: $white;
+			text-align: center;
+		}
+	}
+}
